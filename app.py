@@ -60,7 +60,7 @@ if 'filtered_articles' in st.session_state:
         selected_articles = []
         for i, art in enumerate(sorted(filtered, key=lambda x: x['relevance_score'], reverse=True)):
             is_checked = st.checkbox(
-                f"{i+1}. {art['title']}",
+                f"{i+1}. {art['title']} ([Link]({art['url']}))",
                 key=f"check_{i}",
                 value=st.session_state.selected_articles[i]
             )

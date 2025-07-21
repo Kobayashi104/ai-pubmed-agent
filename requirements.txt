@@ -8,3 +8,4 @@ tqdm
 tenacity
 seaborn
 python-dotenv
+xlsxwriter
